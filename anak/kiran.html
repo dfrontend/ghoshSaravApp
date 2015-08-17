@@ -68,6 +68,7 @@
 
 
 	<!-- scripts -->
+              <script src="cordova.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="../js/jquery.min.js"></script>
 
@@ -80,4 +81,16 @@
               </div>
 	</body>
 
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("audio").on("play", function () {
+            var _this = $(this);
+            console.log(_this);
+            //$("audio").each(function(i,el){
+            //	if(!$(el).is(_this))
+            //		$(el).get(0).pause();
+            //});
+        });
+    });
+</script>
 </html>

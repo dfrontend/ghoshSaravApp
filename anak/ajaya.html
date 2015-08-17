@@ -23,7 +23,7 @@
 			<div class="row">
 				<div class="well text-center">
           <h3>Ajaya Prarambhik</h3>
-          <audio controls="controls" preload="auto">
+          <audio controls="controls" preload="auto" data-src="ajaya/anak-ajaya-prarambhik.mp3">
             Your browser does not support the <code>audio</code> element.
             <source src="ajaya/anak-ajaya-prarambhik.mp3">
         </audio>
@@ -33,7 +33,7 @@
             <div class="row">
         <div class="well text-center">
           <h3>Ajaya Charan 1</h3>
-          <audio controls="controls" preload="auto">
+          <audio controls="controls" preload="auto" data-src="ajaya/anak-ajaya-charan-01.mp3">
             Your browser does not support the <code>audio</code> element.
             <source src="ajaya/anak-ajaya-charan-01.mp3">
         </audio>
@@ -43,7 +43,7 @@
             <div class="row">
         <div class="well text-center">
           <h3>Ajaya Charan 2</h3>
-          <audio controls="controls" preload="auto">
+          <audio controls="controls" preload="auto" data-src="ajaya/anak-ajaya-charan-02.mp3">
             Your browser does not support the <code>audio</code> element.
             <source src="ajaya/anak-ajaya-charan-02.mp3">
         </audio>
@@ -53,7 +53,7 @@
             <div class="row">
         <div class="well text-center">
           <h3>Ajaya Charan 3</h3>
-          <audio controls="controls" preload="auto">
+          <audio controls="controls" preload="auto" data-src="ajaya/anak-ajaya-charan-03.mp3">
             Your browser does not support the <code>audio</code> element.
             <source src="ajaya/anak-ajaya-charan-03.mp3">
         </audio>
@@ -61,6 +61,7 @@
       </div>
 
 	<!-- scripts -->
+              <script src="cordova.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="../js/jquery.min.js"></script>
 
@@ -72,5 +73,29 @@
 
               </div>
 	</body>
+
+    <!--<script type="text/javascript">-->
+        <!--$(document).ready(function() {-->
+            <!--alert("loaded");-->
+            <!--function success() {-->
+                <!--console.log("in success play audio");-->
+            <!--}-->
+            <!--function errorThrown(e) {-->
+                <!--alert('Error while playing the sound!');-->
+            <!--}-->
+            <!--$("audio").on("play", function () {-->
+
+                <!--var _this = $(this);-->
+
+<!--//                function playAudio() {-->
+<!--//                    src = '/android_asset/www/' + src;-->
+                    <!--src = _this.context.currentSrc;-->
+                    <!--var media = new Media(src, success, errorThrown);-->
+                    <!--media.play();-->
+<!--//                }-->
+<!--//                alert(_this.context.currentSrc);-->
+            <!--});-->
+        <!--});-->
+    <!--</script>-->
 
 </html>
