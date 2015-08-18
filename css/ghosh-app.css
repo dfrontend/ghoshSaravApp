@@ -20,7 +20,7 @@ body, html {
 	height: 100%;
 	position: relative;
 	min-height: 100%;
-	margin-bottom: 80px;
+	margin-bottom: 60px;
 }
 
 .panel-heading {
@@ -50,6 +50,7 @@ body, html {
 	font-size: 30px;
 	padding: 10px 0 0 0;
 }
+
 .app-wrapper h3 {
 	margin-top: 0;
 	font-weight: bold;
@@ -58,8 +59,9 @@ body, html {
 .app-wrapper audio {
 	height: 46px;
 }
-.app-wrapper audio::-webkit-media-controls-volume-slider, video::-webkit-media-controls-volume-slider {
+.app-wrapper audio::-webkit-media-controls-volume-slider {
     background-color: black;
+    border-radius: 3px;
 }
 
 .app-wrapper audio::-webkit-media-controls-panel {
@@ -69,4 +71,13 @@ body, html {
 }
 .app-wrapper audio::-webkit-media-controls-timeline {
     background-color: black;
+    border-radius: 3px;
+}
+
+.app-wrapper audio::-webkit-media-controls {
+    /*border: 1px solid red;*/
+}
+
+.app-wrapper audio::-webkit-media-controls-enclosure {
+     /*border: 1px solid blue;*/
 }
