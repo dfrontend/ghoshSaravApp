@@ -50,3 +50,23 @@ body, html {
 	font-size: 30px;
 	padding: 10px 0 0 0;
 }
+.app-wrapper h3 {
+	margin-top: 0;
+	font-weight: bold;
+}
+
+.app-wrapper audio {
+	height: 46px;
+}
+.app-wrapper audio::-webkit-media-controls-volume-slider, video::-webkit-media-controls-volume-slider {
+    background-color: black;
+}
+
+.app-wrapper audio::-webkit-media-controls-panel {
+    height: 40px;
+    background-color: orange;
+    margin-top: -20px;
+}
+.app-wrapper audio::-webkit-media-controls-timeline {
+    background-color: black;
+}
