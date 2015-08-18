@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+	$('.app-wrapper').addClass('animated flipInY');
+
 	$("audio").on("play", function(){
 	    var _this = $(this);
 	    $("audio").each(function(i,el){
