@@ -59,25 +59,32 @@ body, html {
 .app-wrapper audio {
 	height: 46px;
 }
-.app-wrapper audio::-webkit-media-controls-volume-slider {
-    background-color: black;
-    border-radius: 3px;
-}
 
-.app-wrapper audio::-webkit-media-controls-panel {
-    height: 40px;
-    background-color: orange;
-    margin-top: -20px;
-}
-.app-wrapper audio::-webkit-media-controls-timeline {
-    background-color: black;
-    border-radius: 3px;
-}
+/*audio tag color override*/
+/*.app-wrapper audio::-webkit-media-controls-volume-slider {*/
+    /*background-color: black;*/
+    /*border-radius: 3px;*/
+/*}*/
 
-.app-wrapper audio::-webkit-media-controls {
+/*.app-wrapper audio::-webkit-media-controls-panel {*/
+    /*height: 40px;*/
+    /*background-color: orange;*/
+    /*margin-top: -20px;*/
+/*}*/
+/*.app-wrapper audio::-webkit-media-controls-timeline {*/
+    /*background-color: black;*/
+    /*border-radius: 3px;*/
+/*}*/
+
+/*.app-wrapper audio::-webkit-media-controls {*/
     /*border: 1px solid red;*/
-}
+/*}*/
 
-.app-wrapper audio::-webkit-media-controls-enclosure {
+/*.app-wrapper audio::-webkit-media-controls-enclosure {*/
      /*border: 1px solid blue;*/
+/*}*/
+
+
+.rachana-img img {
+	width: 100%;
 }
