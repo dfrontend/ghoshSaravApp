@@ -1,4 +1,8 @@
-
+body, html {
+	height: 100%;
+	position: relative;
+	min-height: 100%;
+}
 .clearfix:before, .clearfix:after {
     content: "";
     display: table;
@@ -12,6 +16,13 @@
     *zoom: 1;
 }
 
+.app-wrapper {
+	/*height: 100%;*/
+	position: relative;
+	/*min-height: 100%;*/
+	margin-bottom: 20px;
+}
+
 .panel-heading {
 	padding: 20px 15px;
 }
@@ -19,14 +30,64 @@
 	font-size: 20px;
 	font-weight: bold;
 	text-decoration: none;
+	text-align: center;
 }
 
 .panel > .panel-collapse > .list-group .list-group-item {
 	padding-left: 30px;
+	text-align: center;
 }
 
 .panel-collapse .list-group-item a {
 	font-size: 15px;
 	font-weight: bold;
 	text-decoration: none;
+}
+
+.footer-link {
+	margin-bottom: 0;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	font-size: 30px;
+	padding: 10px 0 0 0;
+	margin-top: 10px;
+}
+
+.app-wrapper h3 {
+	margin-top: 0;
+	font-weight: bold;
+}
+
+.app-wrapper audio {
+	height: 46px;
+}
+
+/*audio tag color override*/
+/*.app-wrapper audio::-webkit-media-controls-volume-slider {*/
+    /*background-color: black;*/
+    /*border-radius: 3px;*/
+/*}*/
+
+/*.app-wrapper audio::-webkit-media-controls-panel {*/
+    /*height: 40px;*/
+    /*background-color: orange;*/
+    /*margin-top: -20px;*/
+/*}*/
+/*.app-wrapper audio::-webkit-media-controls-timeline {*/
+    /*background-color: black;*/
+    /*border-radius: 3px;*/
+/*}*/
+
+/*.app-wrapper audio::-webkit-media-controls {*/
+    /*border: 1px solid red;*/
+/*}*/
+
+/*.app-wrapper audio::-webkit-media-controls-enclosure {*/
+     /*border: 1px solid blue;*/
+/*}*/
+
+
+.rachana-img img {
+	width: 100%;
 }
