@@ -31,7 +31,7 @@
 .rippler-circle-mask {
   border-radius: 50%;
 
-  -webkit-mask: url(../images/circle.svg) no-repeat;
+  -webkit-mask: url(../img/circle.svg) no-repeat;
   -webkit-mask-size: 100%;
 }
 .rippler-effect {

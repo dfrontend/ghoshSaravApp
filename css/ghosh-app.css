@@ -1,8 +1,12 @@
 body, html {
-	height: 100%;
 	position: relative;
-	min-height: 100%;
-	background-color: #222222;
+    background-color: #06203A;
+    /*background-image: url(../img/app-bg.png);*/
+    /*background-repeat: repeat;*/
+    /*background-position: bottom left;*/
+}
+body.home .app-wrapper {
+	background-image: none;
 }
 .clearfix:before, .clearfix:after {
     content: "";
@@ -16,51 +20,88 @@ body, html {
 .clearfix {
     *zoom: 1;
 }
-
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.h3, h3 {
+    font-size: 18px;
+}
+.h2, h2 {
+    font-size: 22px;
+}
+header {
+	padding: 10px 0;
+}
 .app-wrapper {
 	/*height: 100%;*/
 	position: relative;
 	/*min-height: 100%;*/
-	margin-bottom: 20px;
+	/*padding-bottom: 20px;*/
 }
 .panel {
 	border-radius: 0;
+	border: none;
+
+}
+.panel {
+	background-color: transparent;
+}
+.panel-default>.panel-heading {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    border-color: transparent;
+    border: 0;
+    border-color: transparent;
 }
 .panel-heading {
-	padding: 20px 15px;
+	padding: 15px 10px;
+}
+.panel-heading {
+	padding: 12px 10px;
 }
 .panel-title > a {
-	font-size: 30px;
-	font-weight: bold;
+	font-size: 26px;
+	/*font-weight: bold;*/
 	text-decoration: none;
 	text-align: center;
+	color: #fff;
 }
-
+.panel-body {
+    padding: 10px;
+	background-color: #fff;
+}
 .panel > .panel-collapse > .list-group .list-group-item {
 	/*padding-left: 30px;*/
 	text-align: center;
 }
 
 .panel-collapse .list-group-item a {
-	font-size: 20px;
-	font-weight: bold;
+	font-size: 18px;
+	/*font-weight: bold;*/
 	text-decoration: none;
+	color: #000;
+    text-transform: capitalize;
 }
 
 .footer-link {
 	margin-bottom: 0;
-	position: absolute;
-	/*bottom: 0;*/
-	width: 100%;
-	font-size: 30px;
-	padding: 10px 0 0 0;
-	margin-top: 10px;
+	position: fixed;
+	top: 15px;
+	right: 0;
+	width: 12%;
+	font-size: 18px;
+	padding: 7px 0 0 0;
 	border-radius: 0;
+	background: rgba(245, 245, 245, .1);
+	border: none;
+
 }
 
 .app-wrapper h3 {
 	margin: 0;
-	font-weight: bold;
+	/*font-weight: bold;*/
+    text-transform: capitalize;
 }
 
 .app-wrapper audio {
@@ -69,38 +110,40 @@ body, html {
 
 .app-wrapper h2 {
 	color: #fff;
+	text-transform: capitalize;
 }
 
-/*audio tag color override*/
-/*.app-wrapper audio::-webkit-media-controls-volume-slider {*/
-    /*background-color: black;*/
-    /*border-radius: 3px;*/
-/*}*/
 
-/*.app-wrapper audio::-webkit-media-controls-panel {*/
-    /*height: 40px;*/
-    /*background-color: orange;*/
-    /*margin-top: -20px;*/
-/*}*/
-/*.app-wrapper audio::-webkit-media-controls-timeline {*/
-    /*background-color: black;*/
-    /*border-radius: 3px;*/
-/*}*/
-
-/*.app-wrapper audio::-webkit-media-controls {*/
-    /*border: 1px solid red;*/
-/*}*/
-
-/*.app-wrapper audio::-webkit-media-controls-enclosure {*/
-     /*border: 1px solid blue;*/
-/*}*/
-
+a:focus, a:hover {
+    text-decoration: none;
+}
 
 .rachana-img img {
 	width: 100%;
+	margin-top: 10px;
+}
+.play-pause-btn {
+	margin-top: 20px;
+}
+.media-play, .media-pause {
+	font-size: 12px;
+	display: block;
+	padding: 7px;
+	line-height: 100%;
+	font-weight: bold;
+	/*background-color: #EBF4FF;*/
+	text-transform: uppercase;
+	border-bottom: 1px solid #191818;
+    border-top: 1px solid #CACACA;
+    color: #000;
 }
 
-.media-play, .media-pause {
-	font-size: 40px;
-	margin: 10px;
+audio {
+	display: none!important;
+}
+.about-section .panel-title > a {
+	font-size: 16px;
+}
+.footer-link a {
+    color: #0A2944;
 }
